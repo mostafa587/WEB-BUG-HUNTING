@@ -1,0 +1,32 @@
+
+Vulnerability Report
+Title: Username Enumeration via Error Messages on Login & Password Reset
+Target URL: https://ai-centre.pk/wp-login.php
+Vulnerability Type: Information Disclosure / Username Enumeration
+Severity: Low (may escalate in combination with other attacks)
+
+✅ Summary:
+During testing, it was identified that the login and password reset functionalities on the target website disclose whether a given username or email exists in the system. This behavior allows an attacker to enumerate valid usernames and emails registered on the platform by observing the error messages returned.
+
+✅ Vulnerable Endpoint:
+Login Page: /wp-login.php
+
+Password Reset: /wp-login.php?action=lostpassword
+
+✅ Proof of Concept (PoC):
+1. Login Attempt:
+Request:
+
+plaintext
+Copy
+Edit
+POST /wp-login.php HTTP/1.1
+Host: ai-centre.pk
+...
+username: sdf
+password: randompassword
+Response:
+
+"Error: The username sdf is not registered on this site. If you are unsure of your username, try your email address instead."
+
+This confirms that the username does not exist.

@@ -1,0 +1,4 @@
+astra 4.4.0 	Stored XSS	CVE-2024-2347 in admin Name
+
+astra-sites 3.4.5 not working because the api endpoint has been changed nether me or the server ownaer can use it again
+

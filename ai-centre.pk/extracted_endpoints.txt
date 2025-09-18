@@ -1,0 +1,73 @@
+[+] Scanning https://ai-centre.pk/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.17.2
+elementor/frontend/documents-manager/init-classes
+frontend/element_ready/global
+elementor/modules/init/before
+elementor/frontend/init
+https://www.youtube-nocookie.com
+frontend/handlers/menu_anchor/scroll_top_distance
+https://player.vimeo.com/api/player.js
+https://www.youtube.com/iframe_api
+[+] Scanning https://ai-centre.pk/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.17.2
+elementor/nested-elements/activate-by-keyboard
+elementor-pro/motion-fx/recalc
+elementor/nested-tabs/activate
+elementor/bg-video/recalc
+document/repeater/select
+https://github.com/zloirock/core-js/blob/v3.32.0/LICENSE
+https://github.com/zloirock/core-js
+[+] Scanning https://ai-centre.pk/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.17.2
+[+] Scanning https://ai-centre.pk/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.17.2
+[+] Scanning https://ai-centre.pk/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2
+[+] Scanning https://ai-centre.pk/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=1.6.42
+elementor/frontend/init
+[+] Scanning https://ai-centre.pk/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.16.2
+elementor-pro/frontend/handlers
+http://www.w3.org/2000/svg
+application/json
+elementor/popup/hide
+elementor/popup/
+elementor/frontend/documents-manager/init-classes
+[+] Scanning https://ai-centre.pk/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.16.2
+elementor/frontend/init
+elementor-pro/modules/init/before
+elementor-pro/frontend/handlers
+[+] Scanning https://ai-centre.pk/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.16.2
+[+] Scanning https://ai-centre.pk/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.4.1
+elementor/popup/show
+[+] Scanning https://ai-centre.pk/wp-content/plugins/wpforms-lite/assets/js/utils.min.js?ver=1.8.4.1
+[+] Scanning https://ai-centre.pk/wp-content/plugins/wpforms-lite/assets/js/wpforms.min.js?ver=1.8.4.1
+assets/pro/lib/intl-tel-input/jquery.intl-tel-input-utils.min.js
+https://ipapi.co/jsonp
+https://geo.wpforms.com/v3/geolocate/json
+[+] Scanning https://ai-centre.pk/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min.js?ver=1.19.5
+[+] Scanning https://ai-centre.pk/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min.js?ver=1.1.2
+[+] Scanning https://ai-centre.pk/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0
+[+] Scanning https://ai-centre.pk/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.4.0
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6
+core/i18n
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef
+core/i18n
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2
+[+] Scanning https://ai-centre.pk/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
+https://github.com/zloirock/core-js/blob/v3.39.0/LICENSE
+https://github.com/zloirock/core-js
+[+] Scanning https://ai-centre.pk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1
+application/x-www-form-urlencoded
+[+] Scanning https://ai-centre.pk/wp-includes/js/jquery/jquery.min.js?ver=3.7.0
+text/xml
+text/plain
+text/html
+application/x-www-form-urlencoded
+[+] Scanning https://ai-centre.pk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1
+text/xml
+text/plain
+text/html
+application/x-www-form-urlencoded
+[+] Scanning https://ai-centre.pk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2
+[+] Scanning https://ai-centre.pk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3
+[+] Scanning https://ai-centre.pk/wp-includes/js/underscore.min.js?ver=1.13.7
+[+] Scanning https://ai-centre.pk/wp-includes/js/wp-util.min.js?ver=6.3.2
+[+] Scanning https://ai-centre.pk/wp-includes/js/wp-util.min.js?ver=6.8.1
