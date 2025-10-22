@@ -1,6 +1,6 @@
 # 🎨 XSS Vulnerability Report — Search Function
 
-> **Reported:** 30 June 2024 — **Severity:** 🔴 High
+> **Reported:** 30 8 2025 — **Severity:** 🔴 High
 
 ---
 
