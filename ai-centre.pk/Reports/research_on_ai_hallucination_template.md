@@ -1,10 +1,10 @@
 # Research on AI Hallucination: Mechanisms and Mitigation Strategies
 
-**Author:** [Your Name/Institution Here]
+**Author:** MOSTAFA El-Sayed Mosaad Taha
 
 **Journal:** Journal of Artificial Intelligence Research
 
-**Date:** [Current Date]
+**Date:** May 2025
 
 ---
 
